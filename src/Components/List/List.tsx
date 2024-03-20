@@ -1,4 +1,4 @@
-import { Data } from "../Type/data";
+import { Data } from "../../types/data";
 
 export const List = (data: Data) => {
     const ul: HTMLUListElement | null = document.querySelector('ul');

@@ -1,5 +1,5 @@
 import { List } from "../List/List";
-import { Data } from "../Type/data";
+import { Data } from "../../types/data";
 
 export const Filter = (data: Data) => {
     const arrow: HTMLElement | null = document.querySelector('img');
