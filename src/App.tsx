@@ -1,6 +1,6 @@
 import './App.css';
 import { FetchData } from './Components/Data/FetchData';
-// import arrow from './img/icon/arrow.svg';
+import arrow from './img/icon/arrow.svg';
 
 function App() {
   FetchData();
@@ -10,7 +10,7 @@ function App() {
         <h3>User List</h3>
         <div className="group">
           <input type="text" placeholder="id" />
-          <img alt="arrow" />
+          <img src={arrow} alt="arrow" />
         </div>
         <ul>
         </ul>

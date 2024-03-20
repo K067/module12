@@ -2,8 +2,8 @@ import { List } from "../List/List";
 import { Data } from "../../types/data";
 
 export const Filter = (data: Data) => {
-    const arrow: HTMLElement | null = document.querySelector('img');
-    const input = document.querySelector('input');
+    const arrow: HTMLImageElement | null = document.querySelector('img');
+    const input: HTMLInputElement | null = document.querySelector('input');
 
     if (arrow)
         arrow.addEventListener('click', () => {
