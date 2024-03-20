@@ -1,38 +1,120 @@
-.App {
+body {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+h3 {
+  margin: 0;
+  font-weight: normal;
+  user-select: none;
+}
+
+button {
+  background: none;
+  font-family: 'Courier New', Courier, monospace;
+  cursor: pointer;
+  border: solid 1px black;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
   text-align: center;
+  height: 306.2px;
+  overflow: hidden;
+  overflow-y: scroll;
+  border: 1px solid black;
+  width: 300px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+li {
+  list-style: none;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  user-select: none;
+  cursor: pointer;
+  border-bottom: 1px solid black;
+  min-height: 30px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+li span:nth-child(1) {
+  text-align: center;
+  font-size: 12px;
+  min-width: 25px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+li span:nth-child(2) {
+  border-left: solid 1px black;
+  padding: 5px;
+}
+
+
+img {
+  width: 25px;
+  cursor: pointer;
+}
+
+input {
+  font-family: 'Courier New', Courier, monospace;
+  border-radius: 0;
+  border: solid 1px black;
+}
+
+input:focus {
+  outline: none;
+}
+
+span {
+  word-break: break-all;
+  text-align: left;
+  font-size: 16px;
+}
+
+[contenteditable] {
+  outline: none;
+}
+
+.container {
+  max-width: 510px;
+  margin-top: 130px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.wrapper {
+  min-height: 400px;
+  padding: 50px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 10px;
+  border: 2px solid black;
 }
 
-.App-link {
-  color: #61dafb;
+.act {
+  z-index: 99;
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 5px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.check {
+  text-decoration: line-through;
+}
+
+.adjust {
+  flex-grow: 1;
+  text-align: start;
+}
+
+.group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.rotate {
+  transform: rotate(180deg);
 }
